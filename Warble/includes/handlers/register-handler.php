@@ -1,4 +1,12 @@
 <?php
+
+
+function cleanFormPassword($inputText) {
+  $inputText = strip_tags($inputText);
+  return $inputText;
+
+}
+
 //Make create account login clean
 function cleanFormUsername($inputText) {
   $inputText = strip_tags($inputText);
@@ -20,11 +28,7 @@ function cleanFormString($inputText) {
   return $inputText;
 }
 
-function cleanFormPassword() {
-  $inputText = strip_tags($inputText);
-  return $inputText;
 
-}
 
 
 if(isset($_POST['registerButton'])) {
@@ -44,14 +48,14 @@ $password = cleanFormPassword($_POST['password']);
 $password2 = cleanFormPassword($_POST['password2']);
 
 //runs the register function
-$wasSuccessful = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
+$wasSuccessful = $account->register($username,$firstName,$lastName,$email,$email2,$password,$password2);
 
 if($wasSuccessful) {
+  $_SESSION['userLoggedIn'] = $username;
   header("Location: index.php");
   //if this is successful then send them to the home page
 
-  }
+    }
 
 }
-
  ?>
