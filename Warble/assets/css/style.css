@@ -19,10 +19,11 @@ min-width: 720px;
 
 #nowPlayingBarContainer {
   width: 100%;
-      background-color: #D3D3D3;
+      background-color: #fff;
       bottom: 0;
       position: fixed;
       min-width: 620px;
+      box-shadow: 0 0 8px rgba(0,0,0,.4)
 }
 
 #nowPlayingBar {
@@ -235,6 +236,8 @@ width: calc(100% - 220px);
 .pageHeadingBig {
     padding: 20px;
     text-align: center;
+    margin-right: 100px;
+
 }
 
 .gridViewItem {
