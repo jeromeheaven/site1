@@ -300,7 +300,7 @@ function pauseSong() {
 
                 <div class="playbackBar">
 
-                  <span class="progressTime current">0.00</span>
+                  <span class="progressTime current">0:00</span>
 
                   <div class="progressBar">
                     <div class="progressBarBg">
@@ -309,7 +309,7 @@ function pauseSong() {
                     </div>
                   </div>
 
-                  <span class="progressTime remaining">0.00</span>
+                  <span class="progressTime remaining">0:00</span>
 
                 </div>
 

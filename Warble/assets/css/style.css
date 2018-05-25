@@ -373,19 +373,24 @@ text-align: right;
 }
 
 .tracklistRow .trackOptions img {
-width: 15px;
-visibility: hidden;
+width: 20px;
+
 }
 
 .tracklistRow:hover .trackOptions img {
-width: 15px;
-visibility: hidden;
+width: 18px;
+cursor: pointer;
 }
 
 .tracklistRow .trackDuration {
 width: 12%;
 float: left;
 text-align: right;
+}
+
+.trackDuration span {
+  position: relative;
+  left: 360px;
 }
 
 .artistInfo {
@@ -467,4 +472,105 @@ input:focus {
 .noResults {
   display: block;
   margin: 15px;
+}
+
+
+
+
+.buttonItems .button {
+display: block;
+margin: 0 auto 20px auto;
+text-align: center;
+position: relative;
+left: 315px;
+top: 10px;
+}
+
+.playlistsContainer {
+  padding: 10px 0;
+
+}
+
+.gridViewContainer h2 {
+    position: relative;
+    left: 315px;
+    top: 10px;
+}
+
+.playlistImage {
+  border: 3px solid #282828;
+  padding 10px;
+}
+
+.optionsMenu {
+  position: fixed;
+  background-color: #fff;
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  z-index: 1000;
+  display: none;
+}
+
+.optionsMenu .item {
+  width: 100%
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: rgba(147,147,147,0.8);
+  height: 40px;
+  background-color: #282828;
+  font-size: 14px;
+}
+
+.optionsMenu .item:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+  cursor: pointer;
+}
+
+.trackOptions .optionsButton img {
+ cursor: pointer;
+}
+
+.optionsMenu select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-apparence:none;
+}
+
+.userInfo h1 {
+  text-align: center;
+}
+
+.userDetails {
+  padding: 20px;
+}
+
+.userDetails .container h2 {
+  text-align: center;
+}
+
+.userDetails .container input[type="text"],
+.userDetails .container input[type="password"],
+.userDetails .container .button {
+  display: block;
+  margin: 16px auto;
+}
+
+.userDetails .container input[type="text"],
+.userDetails .container input[type="password"] {
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  border: none;
+  font-size 18px;
+  font-weight: 300;
+  padding: 0 20px;
+}
+
+.userDetails .container .message {
+  color: #F0584D;
+  font-weight: 300;
 }
